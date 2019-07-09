@@ -18,8 +18,8 @@ type Cmd struct {
 func parseCmd() *Cmd {
 	cmd := &Cmd{}
 	flag.Usage = printUsage
-	flag.BoolVar(&cmd.helpFlag, "help", flase, "print help msg")
-	flag.BoolVar(&cmd.helpFlag, "?", flase, "print help msg")
+	flag.BoolVar(&cmd.helpFlag, "help", false., "print help msg")
+	flag.BoolVar(&cmd.helpFlag, "?", false, "print help msg")
 	flag.BoolVar(&cmd.versionFlag, "version", false, "print version and exit")
 	flag.StringVar(&cmd.cpOption, "classpath", "", "classpath")
 	flag.StringVar(&cmd.cpOption, "cp", "", "classpath")
